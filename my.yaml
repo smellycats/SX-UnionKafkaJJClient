@@ -1,0 +1,9 @@
+kafka:
+  services: 10.123.123.123:9092, 10.123.123.124:9092, 10.123.123.125:9092
+  groupid: union_client
+  topic: jj_hcq2
+consul:
+  ttl: 30
+  lock_name: union-kafka-jj-hcq
+union:
+  server_name: unionUploadServer
