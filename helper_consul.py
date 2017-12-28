@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import json
 import urllib
 
@@ -87,7 +87,7 @@ class ConsulAPI(object):
             raise
 
     def get_health(self, service):
-        """删除session"""
+        """获取健康服务"""
         url = 'http://{0}:{1}/v1/health/checks/{2}'.format(
             self.host, self.port, service)
         try:

@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import time
 import json
 import socket
@@ -126,6 +126,7 @@ class UploadData(object):
                     if self.kc is not None:
                         del self.kc
                         self.kc = None
+                    self.item = None
                     time.sleep(2)
                     continue
                 if self.kc is None:
